@@ -1,0 +1,111 @@
+*
+	padding: 0
+	margin: 0
+	box-sizing: border-box
+	font-family: sans-serif
+
+.layout
+	background-color: rgb(51, 50, 50)
+	display: flex
+	justify-content: center
+	align-items: center
+	width: 100wv
+	height: 100vh
+
+.card
+	background-color: rgb(26, 26, 26)
+	padding: 30px
+	border-radius: 10px
+	display: flex
+	justify-content: center
+	align-items: center
+	flex-direction: column
+	gap: 20px
+	font-size: 20px
+	color: #dddddd
+	min-width: 400px
+	max-width: 85vw
+
+.input
+	width: 100%
+	font-family: Arial, sans-serif
+	font-size: 18px
+	padding: 10px
+	border: 1px solid #666
+	border-radius: 5px
+	background-color: #333
+	color: #fff
+
+	/* Focus styles */
+	&:focus
+		border-color: #777
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
+
+	/* Error styles */
+	&:invalid
+		border-color: #f00
+		box-shadow: 0 0 10px rgba(255, 0, 0, 0.5)
+
+	/* Placeholder text */
+	&::placeholder
+		color: #cdcdcd
+
+.button
+	width: 100%
+	background-color: #333
+	color: #fff
+	padding: 10px 20px
+	border: 1px solid #666
+	border-radius: 5px
+	cursor: pointer
+	font-size: 18px
+
+.button:not(:disabled):hover
+	background-color: #393939
+
+.list-commands
+	width: 100%
+
+.line
+	width: 100%
+	height: 1px
+	background-color: #666
+
+.wrap
+	width: 100%
+	display: flex
+	justify-content: center
+	align-items: center
+	gap: 10px
+	flex-direction: column
+
+.wrap-timer
+	width: 100%
+	display: flex
+	justify-content: center
+	align-items: center
+	gap: 10px
+	flex-direction: column
+	text-align: center
+	font-size: 40px
+	color: #fff
+
+.tabel
+	font-size: 26px
+	position: absolute
+	right: 20px
+	bottom: 20px
+
+.tabel table
+	border-collapse: collapse
+
+.tabel th, .tabel td
+	border: 1px solid #ddd
+	padding: 10px
+	text-align: left
+
+.stop-game
+	position: absolute
+	width: auto
+	bottom: 20px
+	left: 20px
